@@ -17,7 +17,7 @@ import card12 from '../resources/card-12.jpg';
 
 export default function Game() {
 
-  const cardArray = [
+  const cards = [
     {id: 0, src: card01}, 
     {id: 1, src: card02}, 
     {id: 2, src: card03}, 
@@ -32,10 +32,9 @@ export default function Game() {
     {id: 11, src: card12}
   ];
   const orderArray = [];
-  for (let i = 0; i < cardArray.length; i++) {
+  for (let i = 0; i < cards.length; i++) {
     orderArray.push(i);
   }
-  const [cards, setCards] = useState(cardArray);
   const [cardOrder, setCardOrder] = useState(orderArray);
   const [clickedCards, setClickedCards] = useState([]);
 
@@ -46,12 +45,9 @@ export default function Game() {
   const [isWin, setIsWin] = useState(false);
   const [isBestScore, setIsBestScore] = useState(false);
 
-  useEffect(() => shuffleCards(), [currentScore]);
+  useEffect(() => shuffleCards(), [clickedCards]);
 
   function shuffleCards() {
-    if (isGameEnd) {
-      return;
-    }
     const randomizedOrder = cardOrder
       .map(x => ({x, sort: Math.random()}))
       .sort((a, b) => a.sort - b.sort)
@@ -67,7 +63,9 @@ export default function Game() {
       if ((currentScore + 1) === cards.length) {
         setIsWin(true);
         setIsGameEnd(true);
-        updateBestScore(currentScore + 1, bestScore);
+        setCurrentScore(cards.length);
+        updateBestScore(cards.length, bestScore);
+        return;
       }
       setClickedCards(clickedCards.concat(id));
       setCurrentScore(currentScore + 1);
