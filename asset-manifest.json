@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/odin-memory-card/static/css/main.47ac1fce.css",
+    "main.js": "/odin-memory-card/static/js/main.44754f15.js",
+    "static/media/card-12.jpg": "/odin-memory-card/static/media/card-12.424f16aaa2670b6a8323.jpg",
+    "static/media/card-07.jpg": "/odin-memory-card/static/media/card-07.75eb70a3d7dd6184994c.jpg",
+    "static/media/card-04.jpg": "/odin-memory-card/static/media/card-04.962980387456e3a31d7a.jpg",
+    "static/media/card-05.jpg": "/odin-memory-card/static/media/card-05.3b0f63332e2465f06029.jpg",
+    "static/media/card-10.jpg": "/odin-memory-card/static/media/card-10.22dd9571898440a1147f.jpg",
+    "static/media/card-02.jpg": "/odin-memory-card/static/media/card-02.79087732cde8f6144bb8.jpg",
+    "static/media/card-08.jpg": "/odin-memory-card/static/media/card-08.105e1783039239e48624.jpg",
+    "static/media/card-09.jpg": "/odin-memory-card/static/media/card-09.4a60608e682c6447d781.jpg",
+    "static/media/card-03.jpg": "/odin-memory-card/static/media/card-03.10ac018b339b08098b08.jpg",
+    "static/media/card-01.jpg": "/odin-memory-card/static/media/card-01.d6c19c29396a0426779e.jpg",
+    "static/media/card-11.jpg": "/odin-memory-card/static/media/card-11.f8637f975ab80a1b4637.jpg",
+    "static/media/card-06.jpg": "/odin-memory-card/static/media/card-06.ac40089ce9b74f25b5cf.jpg",
+    "index.html": "/odin-memory-card/index.html",
+    "main.47ac1fce.css.map": "/odin-memory-card/static/css/main.47ac1fce.css.map",
+    "main.44754f15.js.map": "/odin-memory-card/static/js/main.44754f15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47ac1fce.css",
+    "static/js/main.44754f15.js"
+  ]
+}
